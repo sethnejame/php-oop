@@ -1,5 +1,17 @@
 <?php
 
+class Employee extends Person {
+  public $jobTitle;
+
+  public function __construct($jobTitle) {
+    $this->jobTitle = $jobTitle;
+  }
+
+  public function getJobTitle() {
+    return $this->jobTitle;
+  }
+}
+
 class Person {
   public $firstName;
   public $lastName;
@@ -30,5 +42,11 @@ class Person {
   echo $natalie->sayHello() . " Gender: " . $natalie->getGender();
   echo "\n";
   echo "<br>";
+
+  $employee = new Employee("Backend Developer");
+  echo $employee->getJobTitle();
+  echo "\n";
+  echo "<br>";
+
 
 ?>
