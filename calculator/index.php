@@ -1,3 +1,4 @@
+<?php include 'calc.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,15 +14,15 @@
   <form action="calc.php" method="POST">
     <div class="form-group">
       <label for="num1">Number 1</label>
-      <input type="text" class="form-control" name="num1" value="">
+      <input type="text" class="form-control" name="num1">
     </div>
     <div class="form-group">
       <label for="num2">Number 2</label>
-      <input type="text" class="form-control" name="num1" value="">
+      <input type="text" class="form-control" name="num1">
     </div>
     <div class="form-group">
       <label for="cal">Method</label>
-      <select type="text" class="form-control" name="cal" value="">
+      <select type="text" class="form-control" name="cal">
         <option value="add">Add</option>
         <option value="sub">Subtract</option>
         <option value="mul">Multiply</option>
