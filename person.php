@@ -14,11 +14,21 @@ class Person {
   public function sayHello() {
     return "Hello, my name is ". $this->firstName . " " . $this->lastName;
   }
+
+  public function getGender() {
+    return $this->gender;
+  }
 }
 
   $seth = new Person("Seth", "NeJame", "male");
+  $natalie = new Person("Natalie", "NeJame", "female");
 
-  echo $tom->sayHello();
+  echo $seth->sayHello() . " Gender: " . $seth->getGender();
   echo "\n";
+  echo "<br>";
+
+  echo $natalie->sayHello() . " Gender: " . $natalie->getGender();
+  echo "\n";
+  echo "<br>";
 
 ?>
